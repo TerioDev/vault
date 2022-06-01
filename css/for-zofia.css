@@ -231,10 +231,6 @@ audio {
     width: 100%;
   }
 
-  #somgs {
-    display: none;
-  }
-
   audio {
     border-radius: 100px;
     width: 100%;
