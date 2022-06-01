@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>For Zofia</title>
+  <meta name="apple-mobile-web-app-title" content="I couldn't say goodbye." />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="https://i.imgur.com/tgsKcru.png">
+
+  <link rel="stylesheet" href="css/fade-in-page.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/for-zofia.css">
+
+  <meta name="theme-color" content="#B16791" />
+
+</head>
+
+<body onload="document.body.classList.add('loaded')">
+
+  <div id="body-wrapper">
+
+    <div class="button-wrap"><button class="button-back" value="" data-link="https://terramsc.github.io/vault/"></div>
+
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <img src="https://i.imgur.com/nc24BBo.gif" width="100%">
+        </div>
+      </div>
+    </div>
+
+    <div id="somgs2">
+
+      <div class="tooltip-wrap">
+        <div class="tooltip" onclick="">Version history
+          <span class="tooltiptext">
+            <div class="popup-text">
+              <p><a href="https://docs.google.com/uc?export=download&id=1eFnqeF0wmRhAXwG8UrYWWpYgiyteEbnu">v0.1 - 17.04.2022</p></a>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <p>"I couldn't tell you - goodbye"</p>
+
+        <div id="audiodiv">
+          <!-- PLAYER -->
+          <div id="player">
+            <!-- CHANGE PLAYER COLOR -->
+            <div id="color-switch"><img src="https://i.imgur.com/SYyiJUa.png">
+
+              <div id="volume-slider-container">
+                <output id="volume-output">100</output>
+                <div id="volume-slider-squish">
+                  <input type="range" id="volume-slider" max="100" value="70">
+                </div>
+                <button id="mute-icon"></button>
+              </div>
+
+              <div id="audio-player-container">
+                <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop></audio>
+
+                <button id="play-icon"></button>
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div id="audioshadow"><img src="https://i.imgur.com/zlsI7as.png"></div>
+
+    </div>
+
+    <div id="top_text">
+      sleep tight
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="js/player.js" type="module"></script>
+
+  <script>
+  $(document).ready(function() {
+          $(".button-back").click(function() {
+            $link = $(this).data("link");
+            $("body").fadeOut(500);
+            setTimeout(function() {
+                console.log($link);
+              window.location = $link;
+            }, 500);
+            return false;
+          });
+   });
+  </script>
+
+</body>
+
+</html>

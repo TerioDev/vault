@@ -1,0 +1,185 @@
+<html lang="en">
+	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TERRA.NOSTEREO</title>
+	  
+	<meta name="theme-color" content="#9ab9d1"/>
+	  
+  </head>
+	
+  <style>
+	  
+    #body-wrapper {
+        display: none;
+	 background-color: #9ab9d1;
+    }
+	  
+* {
+   box-sizing: border-box;
+	  }
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+    background-color: #000;
+}
+
+#container {
+  font-size: 0;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px 0px 20px;
+  max-width: 800px;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  transition: ease all 0.5;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #9ab9d1;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #9ab9d1;
+}
+
+#two {
+  margin: -1px 0 -1px 0;
+  position: relative;
+}
+
+#audio-player {
+  position: absolute;
+  margin: auto;
+  top: 0; 
+  left: -7px; 
+  bottom: 0; 
+  right: 0;
+  max-width: 65%;
+  height: 30px;
+}
+
+audio {
+  width: 100%;
+  height: 30px;
+  transform: scale(0.8);
+}
+
+#navigation {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    justify-content: center;
+    z-index: 1;
+  }
+
+.navigation-button {
+  background-image: url(https://i.imgur.com/5kzRRDx.png);
+    background-color: rgb(0, 0, 0, 0);
+    border: 0;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: initial;
+}
+
+.navigation-button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-height: 1000px) {
+  #container {
+    transition: ease all 0.5s;
+    max-width: 725px;
+  }
+}
+
+@media only screen and (max-height: 925px) {
+  #container {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-height: 825px) {
+  #container {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  #container {
+    max-width: 550px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #container {
+    max-width: 400px;
+  }
+}
+  </style>
+	
+<body>
+	
+	<div id="body-wrapper">
+	
+	<div id="navigation"> 
+    <button class="navigation-button" data-link="https://terramsc.github.io/vault/"></button>
+</div>
+	
+    <div id="container">
+      <div id="one">
+        <img src="https://i.imgur.com/Z6CVXRr.png">
+      </div>
+      <div id="two"><img src="https://i.imgur.com/jwS8d0c.png">
+        <div id="audio-player">
+          <audio controls><source src="https://docs.google.com/uc?export=download&id=11Ha_wWo9swSODWuftrHDu-ccbyZ58-HP" type="audio/mpeg"/></audio>
+        </div>
+      </div>
+      <div id="three"><img src="https://i.imgur.com/93F1RFH.png"></div>
+    </div>
+		
+	</div>
+	
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script>
+        $(window).load(function(){
+            $('#body-wrapper').hide();
+            $('#body-wrapper').fadeIn(1000);
+            setInterval(switchSlide, 2000);
+        });
+  </script>
+
+<script>
+    $('.navigation-button').click(function() {
+        var destination = $(this).data("link");
+     $("body").fadeOut(500,function(){
+           window.location.replace(destination);
+        });
+    });
+</script>
+	
+</html>

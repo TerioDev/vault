@@ -1,0 +1,261 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+
+    <title>U ok?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.imgur.com/tgsKcru.png">
+    
+    <meta name="theme-color" content="#ffffff"/>
+
+</head>
+
+  <style>
+    /* HTML & BODY */
+    #body-wrapper {
+        display: none;
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      background-color: #000;
+    }
+
+    body {
+      background-color: #000;
+    }
+
+    /* MAIN CENTERED DIV WITH A PIC */
+
+    .outer {
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      width: 100%;
+      color: white;
+      /* Whatever width you want */
+    }
+
+    /* MAIN DIV */
+
+      .background-artwork {
+      background-image: url("https://i.imgur.com/Rdtaz0k.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: white;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* GO BACK BUTTON */
+
+    button {
+      margin: 20px 0px 0px 20px;
+      padding: 0;
+      position: fixed;
+      height: 80px;
+      width: 80px;
+      background-color: #fff;
+      border: 2px solid #fff;
+      font-size: 48px;
+      background-image: url("https://i.imgur.com/Va5F3e1.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100%;
+      z-index: 99;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    /* SOMGS */
+
+    #audio-div {
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      width: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #audio-div-2 {
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      position: fixed;
+      display: none;
+      bottom: 35px;
+      left: 40px;
+      right: 40px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* AUDIO PLAYER */
+
+    audio {
+      border-radius: 100px;
+      width: 100%;
+    }
+
+    #audiodiv {
+      min-height: 40px;
+    }
+
+
+    /* AUDIO PLAYER CUSTOM COLORS */
+
+    audio {
+      filter: grayscale(1);
+    }
+
+    /* OTHER */
+
+    #top_text {
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+      position: fixed;
+    }
+
+    .credits {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: black;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    /* MOBILE */
+
+    @media only screen and (max-width: 1000px) {
+
+      input[type=button] {
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+      }
+
+      #audio-div {
+        display: none;
+      }
+
+      audio {
+        border-radius: 100px;
+        width: 100%;
+      }
+
+      #audio-div {
+        display: none;
+      }
+
+      #audio-div-2 {
+        display: initial;
+        left: 0;
+        right: 0;
+        padding: 0px 40px 0px 40px;
+      }
+
+      #top_text {
+        text-align: right;
+        right: 40px;
+        font-size: 18px;
+      }
+
+    }
+
+    @supports (-webkit-touch-callout: none) {
+      #audio-div-2 {
+        bottom: 30px;
+      }
+
+      audio {
+        filter: grayscale(initial);
+      }
+    }
+
+  </style>
+
+  <body>
+
+    <div id="body-wrapper">
+
+      <div class="button" data-link="https://terramsc.github.io/vault/"><button data-link="https://terramsc.github.io/vault/"></div>
+
+      <div id="audio-div">
+        <div class="credits">best years of my life • by Terra</div>
+        <audio controls="controls">
+          <source src="https://docs.google.com/uc?export=download&id=1kV7A3jcBEGoYke0uY0ZMDTA62Q_brCaS">
+        </audio>
+
+      </div>
+
+      <div id="audio-div-2">
+        <div class="credits">best years of my life • by Terra</div>
+        <div id="audiodiv">
+          <audio controls="controls">
+            <source src="https://docs.google.com/uc?export=download&id=1kV7A3jcBEGoYke0uY0ZMDTA62Q_brCaS">
+          </audio>
+        </div>
+      </div>
+
+      <div class="background-artwork"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        $(window).load(function(){
+            $('#body-wrapper').fadeIn(500);
+        });
+    </script>
+
+    <script>
+      $('.button').click(function() {
+        var destination = $(this).data("link");
+        $("body").fadeOut(500, function() {
+          window.location.replace(destination);
+        });
+      });
+
+    </script>
+
+  </body>
+
+</html>

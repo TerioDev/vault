@@ -1,0 +1,111 @@
+/* HTML + BODY + ALL */
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inter";
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: -5px;
+  margin-bottom: -8px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* CENTERED DIV FOR CONTENT */
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  text-align: center;
+  color: white;
+  /* Whatever width you want */
+}
+
+.inner img {
+  max-width: 100%;
+}
+
+/* LINKS DECORATION */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* OTHER */
+.logotype {
+  min-height: 262px;
+  padding-bottom: 30px;
+}
+
+/* NEWSLETTER FORM */
+.ml-embedded {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* MOBILE */
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 5vw;
+    line-height: 1.5em;
+  }
+
+  .logotype {
+    min-height: initial;
+    padding-bottom: 40px;
+  }
+
+  .inner {
+    width: 90%;
+  }
+
+  .logotype {
+    padding-bottom: 20px;
+  }
+}
