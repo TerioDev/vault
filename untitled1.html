@@ -1,22 +1,26 @@
 <html lang="en">
-	
+
   <head>
+
+		<link rel="manifest" href="manifest.json">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TERRA.NOSTEREO</title>
-	  
+
 	<meta name="theme-color" content="#9ab9d1"/>
-	  
+
   </head>
-	
+
   <style>
-	  
+
     #body-wrapper {
         display: none;
 	 background-color: #9ab9d1;
     }
-	  
+
 * {
    box-sizing: border-box;
 	  }
@@ -66,9 +70,9 @@ img {
 #audio-player {
   position: absolute;
   margin: auto;
-  top: 0; 
-  left: -7px; 
-  bottom: 0; 
+  top: 0;
+  left: -7px;
+  bottom: 0;
   right: 0;
   max-width: 65%;
   height: 30px;
@@ -138,15 +142,15 @@ audio {
   }
 }
   </style>
-	
+
 <body>
-	
+
 	<div id="body-wrapper">
-	
-	<div id="navigation"> 
+
+	<div id="navigation">
     <button class="navigation-button" data-link="https://terramsc.github.io/vault/"></button>
 </div>
-	
+
     <div id="container">
       <div id="one">
         <img src="https://i.imgur.com/Z6CVXRr.png">
@@ -158,9 +162,9 @@ audio {
       </div>
       <div id="three"><img src="https://i.imgur.com/93F1RFH.png"></div>
     </div>
-		
+
 	</div>
-	
+
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -181,5 +185,5 @@ audio {
         });
     });
 </script>
-	
+
 </html>
