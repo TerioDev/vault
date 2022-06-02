@@ -2,8 +2,8 @@
   "name": "TERRA",
   "short_name": "TERRA",
   "display": "standalone",
-  "scope": ".",
-  "start_url": "/",
+  "scope": "https://terramsc.github.io/vault/",
+  "start_url": "./",
   "icons": [{
   "src": "icon-256.png",
   "sizes": "256x256",
