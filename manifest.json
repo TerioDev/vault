@@ -2,7 +2,7 @@
   "name": "TERRA",
   "short_name": "TERRA",
   "display": "standalone",
-  "scope": "/",
+  "scope": "*",
   "start_url": "/",
   "icons": [{
   "src": "icon-256.png",
