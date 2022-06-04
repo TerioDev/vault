@@ -3,6 +3,7 @@
 *:focus {
   outline: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 html,
