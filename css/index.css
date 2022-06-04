@@ -2,6 +2,7 @@
 
 *:focus {
   outline: none;
+  -webkit-backface-visibility: hidden;
 }
 
 html,
@@ -105,7 +106,6 @@ a:hover {
 
 /* MOBILE */
 @media only screen and (max-width: 760px) {
-
   h1 {
     font-size: 5vw;
     line-height: 1.5em;
@@ -123,5 +123,4 @@ a:hover {
   .logotype {
     padding-bottom: 20px;
   }
-  
 }
