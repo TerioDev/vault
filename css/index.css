@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   font-family: "Inter";
   background-color: black;
+  -webkit-backface-visibility: hidden;
 }
 
 #body-wrapper {
