@@ -96,16 +96,17 @@
   <script src="js/player.js" type="module"></script>
 
   <script>
-  $(".button-back").click(function() {
-    $link = $(this).data("link");
-    $("body").fadeOut(500);
-    setTimeout(function() {
-        console.log($link);
-      window.location = $link;
-    }, 500);
-    return false;
-  });
-  });
+  $(document).ready(function() {
+          $(".button-back").click(function() {
+            $link = $(this).data("link");
+            $("body").fadeOut(500);
+            setTimeout(function() {
+                console.log($link);
+              window.location = $link;
+            }, 500);
+            return false;
+          });
+   });
   </script>
 
 </body>
