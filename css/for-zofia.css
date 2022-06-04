@@ -8,10 +8,6 @@
   margin: 0;
 }
 
-body:not(.loaded) {
-  display: none;
-}
-
 html,
 body {
   margin: 0;
