@@ -14,15 +14,55 @@
 
 	<meta name="theme-color" content="#9ab9d1"/>
 
-  <link rel="stylesheet" href="css/fade-in-page.css">
-
   </head>
 
   <style>
 
+  #body-wrapper {
+      margin-top: 25px;
+      font-size: 21px;
+      text-align: center;
+
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 2s; /* Firefox < 16 */
+          -ms-animation: fadein 2s; /* Internet Explorer */
+           -o-animation: fadein 2s; /* Opera < 12.1 */
+              animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+
     #body-wrapper {
         display: none;
 	 background-color: #9ab9d1;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   display: block;
+   margin: 0;
+   padding: 0;
     }
 
 * {
@@ -35,10 +75,7 @@ body {
   padding: 0px;
   width: 100%;
   height: 100%;
-}
-
-html {
-    background-color: #000;
+  background-color: #000;
 }
 
 #container {
@@ -174,12 +211,17 @@ audio {
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
-    $('.navigation-button').click(function() {
-        var destination = $(this).data("link");
-     $("body").fadeOut(500,function(){
-           window.location.replace(destination);
+$(document).ready(function() {
+        $(".navigation-button").click(function() {
+          $link = $(this).data("link");
+          $("body").fadeOut(500);
+          setTimeout(function() {
+              console.log($link);
+            window.location = $link;
+          }, 500);
+          return false;
         });
-    });
+ });
 </script>
 
 </html>

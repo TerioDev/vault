@@ -26,14 +26,13 @@
 
   <style>
     /* HTML & BODY */
-    #body-wrapper {
-        display: none;
-    }
 
     html,
     body {
       margin: 0;
+      padding: 0;
       height: 100%;
+      width: 100%;
       overflow: hidden;
       font-family: 'Inter', sans-serif;
     }
@@ -44,6 +43,13 @@
 
     body {
       background-color: #000;
+    }
+
+    #body-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: #fff;
     }
 
     /* MAIN CENTERED DIV WITH A PIC */
@@ -85,7 +91,7 @@
 
     /* GO BACK BUTTON */
 
-    button {
+    .button-back {
       margin: 20px 0px 0px 20px;
       padding: 0;
       position: fixed;
@@ -101,7 +107,7 @@
       z-index: 99;
     }
 
-    button:hover {
+    .button-back:hover {
       cursor: pointer;
     }
 
@@ -221,7 +227,7 @@
 
     <div id="body-wrapper">
 
-      <div class="button" data-link="https://terramsc.github.io/vault/"><button data-link="https://terramsc.github.io/vault/"></div>
+      <div class="button-back" data-link="https://terramsc.github.io/vault/"><button data-link="https://terramsc.github.io/vault/"></div>
 
       <div id="audio-div">
         <div class="credits">best years of my life • by Terra</div>
@@ -247,13 +253,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
-      $('.button').click(function() {
-        var destination = $(this).data("link");
-        $("body").fadeOut(500, function() {
-          window.location.replace(destination);
-        });
-      });
-
+    $(document).ready(function() {
+            $(".button-back").click(function() {
+              $link = $(this).data("link");
+              $("body").fadeOut(500);
+              setTimeout(function() {
+                  console.log($link);
+                window.location = $link;
+              }, 500);
+              return false;
+            });
+     });
     </script>
 
   </body>
