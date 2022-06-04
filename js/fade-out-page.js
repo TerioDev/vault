@@ -1,3 +1,4 @@
+// for-zofia.html //
 $(".button-back").click(function() {
   $link = $(this).data("link");
   $("body").fadeOut(500);
@@ -9,6 +10,7 @@ $(".button-back").click(function() {
 });
 });
 
+// index.html //
 $("a").click(function() {
   $link = $(this).data("link");
   $("body").fadeOut(500);
