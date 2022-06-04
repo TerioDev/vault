@@ -120,12 +120,12 @@
 
   </div>
 
+  <!-- ========= LINKED SCRIPTS ========= -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
   <script src="js/player.js" type="module"></script>
-
   <script src="js/disable-scroll.js"></script>
 
+  <!-- ============= SCRIPTS ============= -->
   <script>
     $(document).ready(function() {
       $('.navigation-button-info').click(function() {
@@ -171,6 +171,16 @@
         return false;
       });
     });
+  </script>
+
+  <script>
+    window.addEventListener("pageshow", function(evt){
+          if(evt.persisted){
+          setTimeout(function(){
+              window.location.reload();
+          },10);
+      }
+    }, false);
   </script>
 
 </body>
