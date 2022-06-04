@@ -12,7 +12,10 @@ body {
   height: 100%;
   overflow: hidden;
   font-family: "Inter";
-  filter: grayscale(1);
+}
+
+body {
+  background-color: black;
 }
 
 .link {
