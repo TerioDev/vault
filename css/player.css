@@ -70,13 +70,13 @@ button {
 #play-icon img {
   width: 20px;
   height: 20px;
-  top: 3px;
+  top: 2px;
   left: 0;
 }
 
 #play-img {
   padding-right: 20px;
-  padding-top: 2px;
+  padding-top: 3px;
   z-index: 0;
 }
 
