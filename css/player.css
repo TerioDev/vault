@@ -68,6 +68,7 @@ button {
   filter: invert(1);
   mix-blend-mode: difference;
   background: transparent;
+  z-index: 999;
 }
 
 path {
