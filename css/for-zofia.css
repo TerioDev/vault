@@ -9,20 +9,15 @@
   -webkit-backface-visibility: hidden;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  font-family: 'Inter', sans-serif;
-}
-
 html {
   background-color: #000;
 }
 
 body {
-  background-color: #000;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
 /* MAIN CENTERED DIV WITH A PIC */
