@@ -53,32 +53,26 @@
 
       <p>"I couldn't tell you - goodbye"</p>
 
-        <div id="audiodiv">
-          <!-- PLAYER -->
-          <div id="player">
-            <!-- CHANGE PLAYER COLOR -->
-            <div id="color-switch"><img src="https://i.imgur.com/SYyiJUa.png">
-
-              <div id="volume-slider-container">
-                <output id="volume-output">100</output>
-                <div id="volume-slider-squish">
-                  <input type="range" id="volume-slider" max="100" value="70">
-                </div>
-                <button id="mute-icon"></button>
-              </div>
-
-              <div id="audio-player-container">
-                <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop></audio>
-
-                <button id="play-icon"></button>
-                <span id="current-time" class="time">0:00</span>
-                <input type="range" id="seek-slider" max="100" value="0">
-                <span id="duration" class="time">0:00</span>
-
-              </div>
+        <!-- PLAYER -->
+      <div id="player">
+        <!-- CHANGE PLAYER COLOR -->
+        <div id="color-switch"><img src="https://i.imgur.com/SYyiJUa.png">
+          <div id="volume-slider-container">
+            <output id="volume-output">100</output>
+            <div id="volume-slider-squish">
+              <input type="range" id="volume-slider" max="100" value="70">
             </div>
+            <button id="mute-icon"></button>
+          </div>
+          <div id="audio-player-container">
+            <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop></audio>
+            <button id="play-icon"></button>
+            <span id="current-time" class="time">0:00</span>
+             <span id="duration" class="time">0:00</span>
+            <input type="range" id="seek-slider" max="100" value="0">
           </div>
         </div>
+      </div>
 
     <div id="audioshadow"><img src="https://i.imgur.com/zlsI7as.png"></div>
 
