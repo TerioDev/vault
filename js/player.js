@@ -1,7 +1,6 @@
 /* Implementation of the presentation of the audio player */
 import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
 
-const player = document.querySelector('#player')
 const playIconContainer = document.getElementById('play-icon');
 const audioPlayerContainer = document.getElementById('audio-player-container');
 const seekSlider = document.getElementById('seek-slider');
@@ -12,7 +11,7 @@ let muteState = 'unmute';
 
 const playAnimation = lottieWeb.loadAnimation({
   container: playIconContainer,
-  path: 'https://assets7.lottiefiles.com/packages/lf20_vbkmvxki.json',
+  path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
   renderer: 'svg',
   loop: false,
   autoplay: false,
@@ -28,17 +27,19 @@ const muteAnimation = lottieWeb.loadAnimation({
     name: "Mute Animation",
 });
 
-playAnimation.goToAndStop(10, true);
+playAnimation.goToAndStop(14, true);
 
 playIconContainer.addEventListener('click', () => {
     if(playState === 'play') {
         audio.play();
-        playAnimation.playSegments([40, 42], true);
+        playAnimation.playSegments([14, 27], true);
+        document.getElementById("play-icon").innerHTML = '<img src="https://i.imgur.com/oV5RvOO.png" />';
         requestAnimationFrame(whilePlaying);
         playState = 'pause';
     } else {
         audio.pause();
-        playAnimation.playSegments([10, 12], true);
+        playAnimation.playSegments([0, 14], true);
+        document.getElementById("play-icon").innerHTML = '<img src="https://i.imgur.com/VyvUv2E.png" />';
         cancelAnimationFrame(raf);
         playState = 'play';
     }
@@ -57,8 +58,8 @@ muteIconContainer.addEventListener('click', () => {
 });
 
 const showRangeProgress = (rangeInput) => {
-    if(rangeInput === seekSlider) player.style.setProperty('--seek-before-width', rangeInput.value / rangeInput.max * 100 + '%');
-    else player.style.setProperty('--volume-before-width', rangeInput.value / rangeInput.max * 100 + '%');
+    if(rangeInput === seekSlider) audioPlayerContainer.style.setProperty('--seek-before-width', rangeInput.value / rangeInput.max * 100 + '%');
+    else audioPlayerContainer.style.setProperty('--volume-before-width', rangeInput.value / rangeInput.max * 100 + '%');
 }
 
 seekSlider.addEventListener('input', (e) => {
@@ -96,14 +97,14 @@ const setSliderMax = () => {
 }
 
 const displayBufferedAmount = () => {
-    const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 2));
-    player.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
+    const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
+    audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
 }
 
 const whilePlaying = () => {
     seekSlider.value = Math.floor(audio.currentTime);
     currentTimeContainer.textContent = calculateTime(seekSlider.value);
-    player.style.setProperty('--seek-before-width', `${seekSlider.value / seekSlider.max * 100}%`);
+    audioPlayerContainer.style.setProperty('--seek-before-width', `${seekSlider.value / seekSlider.max * 100}%`);
     raf = requestAnimationFrame(whilePlaying);
 }
 

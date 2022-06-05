@@ -21,9 +21,6 @@
   display: initial;
 }
 
-#volume-slider-container {
-}
-
 /* COLOR OVERLAY */
 #color-switch {
   width: 100%;
@@ -60,9 +57,6 @@ button {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 25px;
-  height: 25px;
-  transform: scale(1.2);
   z-index: 1;
     filter: invert(100%);
     -webkit-filter: invert(100%);
@@ -71,12 +65,25 @@ button {
     -ms-filter: invert(100%);
   mix-blend-mode: difference;
   background: transparent;
+}
+
+#play-icon img {
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 0;
+}
+
+#play-img {
+  padding-right: 20px;
+  padding-top: 3px;
   z-index: 0;
 }
 
 path {
   stroke: #fff;
   fill: #fff;
+  opacity: 0;
   mix-blend-mode: difference;
   object-fit: cover;
 }
@@ -128,7 +135,6 @@ button.navigation-button-nwsletter {
   max-width: 608px;
   width: 100%;
   height: 30px;
-  content-align: center;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
