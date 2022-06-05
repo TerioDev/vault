@@ -71,7 +71,7 @@ button {
     -ms-filter: invert(100%);
   mix-blend-mode: difference;
   background: transparent;
-  z-index: 1;
+  z-index: 0;
 }
 
 path {
