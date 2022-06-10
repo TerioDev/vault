@@ -4,7 +4,10 @@
   outline: none;
 }
 
-html,
+html {
+  background-color: black;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -22,6 +25,7 @@ body {
     padding: 0;
     background-color: black;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
 .link {
