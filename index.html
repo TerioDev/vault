@@ -87,31 +87,6 @@
   <script src="js/index.js" type="text/javascript"></script>
 
   <script>
-    $(document).ready(function() {
-      $("a").click(function() {
-        $link = $(this).attr("href");
-        $("body").fadeOut(1000);
-        navOut();
-        setTimeout(function() {
-          console.log($link);
-          window.location = $link;
-        }, 1000);
-        return false;
-      });
-    });
-  </script>
-
-  <script>
-    window.addEventListener("pageshow", function(evt){
-          if(evt.persisted){
-          setTimeout(function(){
-              window.location.reload();
-          },10);
-      }
-    }, false);
-  </script>
-
-  <script>
     function showInfo() {
       document.getElementById('info-div').style.display = "flex";
     }
@@ -134,6 +109,32 @@
     }
   </script>
 
+  
+<script>
+  $(document).ready(function() {
+    $("a").click(function() {
+      $link = $(this).attr("href");
+      $("body").fadeOut(1000);
+      navOut();
+      setTimeout(function() {
+        console.log($link);
+        window.location = $link;
+      }, 1000);
+      return false;
+    });
+  });
+</script>
+
+  <script>
+    window.addEventListener("pageshow", function(evt){
+          if(evt.persisted){
+          setTimeout(function(){
+              window.location.reload();
+          },10);
+      }
+    }, false);
+  </script>
+  
 </body>
 
 </html>
