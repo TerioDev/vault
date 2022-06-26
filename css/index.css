@@ -134,6 +134,7 @@ body {
 
 .ml-embedded {
     width: 400px;
+    filter: contrast(90%);
 }
 
 #newsletter-div > .close {
