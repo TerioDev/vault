@@ -5,12 +5,26 @@ body {
 }
 
 * {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none; 
-        -ms-user-select: none; 
-            user-select: none;
+
+}
+
+#newsletter-div {
+
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: rgb(244, 244, 244, 0.2);
+  }
+  
+::selection {
+    background: rgb(244, 244, 244, 0.2);
+}
+
+#mce-EMAIL::selection {
+    background: rgb(26, 26, 26, 0.2);
+}
+#mce-EMAIL::-moz-selection {
+    background: rgb(26, 26, 26, 0.2);
 }
 
 .header {
