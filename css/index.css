@@ -27,6 +27,9 @@ body {
     display: inline-block;
     text-align: center;
     height: 13vw;
+
+    /* off */
+    display: none;
 }
 
 ::-moz-selection { /* Code for Firefox */
