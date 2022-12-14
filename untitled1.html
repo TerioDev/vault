@@ -14,21 +14,20 @@
     <title>TERRA.NOSTEREO</title>
 
 	<meta name="theme-color" content="#9ab9d1"/>
+	
+	<link rel="stylesheet" href="css/iframe.css">
 
   </head>
 
   <style>
 
   #body-wrapper {
-      margin-top: 25px;
-      font-size: 21px;
-      text-align: center;
 
-      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-         -moz-animation: fadein 2s; /* Firefox < 16 */
-          -ms-animation: fadein 2s; /* Internet Explorer */
-           -o-animation: fadein 2s; /* Opera < 12.1 */
-              animation: fadein 2s;
+      -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 4s; /* Firefox < 16 */
+          -ms-animation: fadein 4s; /* Internet Explorer */
+           -o-animation: fadein 4s; /* Opera < 12.1 */
+              animation: fadein 4s;
   }
 
   @keyframes fadein {
@@ -56,15 +55,23 @@
 
 
     #body-wrapper {
-        display: none;
 	 background-color: #9ab9d1;
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   display: block;
-   margin: 0;
-   padding: 0;
+	 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
+	width: 100%;
+	height: 100%;
     }
+	
+	.iframe-container {
+		max-width: 1000px;
+	}
+
 
 * {
    box-sizing: border-box;
@@ -76,65 +83,9 @@ body {
   padding: 0px;
   width: 100%;
   height: 100%;
-  background-color: #000;
-}
-
-#container {
-  font-size: 0;
-  display: flex;
-  flex-flow: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 20px 0px 20px;
-  max-width: 800px;
-  height: 100%;
-  justify-content: center;
-  overflow: hidden;
-  transition: ease all 0.5;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: #9ab9d1;
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
   background-color: #9ab9d1;
 }
 
-#two {
-  margin: -1px 0 -1px 0;
-  position: relative;
-}
-
-#audio-player {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: -7px;
-  bottom: 0;
-  right: 0;
-  max-width: 65%;
-  height: 30px;
-}
-
-audio {
-  width: 100%;
-  height: 30px;
-  transform: scale(0.8);
-}
-
-#navigation {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    bottom: 0;
-    justify-content: center;
-    z-index: 1;
-  }
 
 .navigation-button {
   background-image: url(https://i.imgur.com/5kzRRDx.png);
@@ -153,57 +104,15 @@ audio {
     cursor: pointer;
 }
 
-@media only screen and (max-height: 1000px) {
-  #container {
-    transition: ease all 0.5s;
-    max-width: 725px;
-  }
-}
-
-@media only screen and (max-height: 925px) {
-  #container {
-    max-width: 650px;
-  }
-}
-
-@media only screen and (max-height: 825px) {
-  #container {
-    max-width: 600px;
-  }
-}
-
-@media only screen and (max-height: 750px) {
-  #container {
-    max-width: 550px;
-  }
-}
-
-@media only screen and (max-height: 700px) {
-  #container {
-    max-width: 400px;
-  }
-}
   </style>
 
 <body>
 
 	<div id="body-wrapper">
 
-	<div id="navigation">
-    <button class="navigation-button" data-link="https://terramsc.github.io/vault/"></button>
-</div>
-
-    <div id="container">
-      <div id="one">
-        <img src="https://i.imgur.com/Z6CVXRr.png">
-      </div>
-      <div id="two"><img src="https://i.imgur.com/jwS8d0c.png">
-        <div id="audio-player">
-          <audio controls><source src="https://docs.google.com/uc?export=download&id=11Ha_wWo9swSODWuftrHDu-ccbyZ58-HP" type="audio/mpeg"/></audio>
-        </div>
-      </div>
-      <div id="three"><img src="https://i.imgur.com/93F1RFH.png"></div>
-    </div>
+		<div class="iframe-container">
+			<iframe src="https://www.youtube.com/embed/WN-pgr8P_pY?modestbranding=1&rel=0&iv_load_policy=3&color=white" width="100%" height="100%" title="(abandoned) untitled" frameborder="0" allowfullscreen></iframe>
+	    </div>
 
 	</div>
 

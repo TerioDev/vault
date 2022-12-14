@@ -1,0 +1,37 @@
+/* THEME */
+
+/* font */
+body { font-family: 'Lora', serif; }
+
+/* image filter */
+body img { filter: brightness(2); filter: sepia(2);}
+
+/* background main */
+body, #info-div, #newsletter-div, #save-div { background-color: #cec3b0; }
+
+/* background sub */
+.menu { background-color: #cec3b0;}
+
+/* selection */
+::-moz-selection, ::selection  { background: rgb(244, 244, 244, 0.2); }
+
+/* email selection */
+#mce-EMAIL::selection, #mce-EMAIL::-moz-selection { background: rgb(26, 26, 26, 0.2); }
+
+/* borders */
+.divider { background-color: #8C8377; }
+.menu { border-bottom: 2px solid #8C8377; }
+.content { border: 2px solid #8C8377; }
+
+/* text main */
+.menu, .content, .close, .links { color: #000; }
+
+/* menu links */
+.info:hover { text-decoration: none; cursor: pointer; color: #8C8377; }
+
+/* links */
+a { color: #000; text-decoration: none; }
+a:link { color: #000; text-decoration: none; }
+a:visited { color: #000; text-decoration: none; }
+a:hover { color: #8C8377; text-decoration: none; }
+a:active { color: #8C8377; text-decoration: none; }
