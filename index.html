@@ -133,21 +133,21 @@
     </div>
 
     <div class="header">
-		<!- LOGOTYPE MAIN PAGE ->
-      <img src="img/logotype.png">
+		<!-- LOGOTYPE MAIN PAGE -->
+      <img src="img/logotype-pure-white.png">
     </div>
 
     <div class="divider"></div>
 
     <div class="menu">
-      <div class="info" onclick="showInfo()">info</div>
+      <div class="info" onclick="showInfo()">news</div>
       <div class="info" onclick="showNewsletter()">newsletter</div>
-      <div class="info" onclick="showSave()">save</div>
+      <div class="info" onclick="showInfoSmall()">info</div>
     </div>
 
     <div id="info-div">
-		<!- LOGOTYPE SMALL ->
-      <div class="small-logo"><img src="img/logotype.png"></div>
+		<!-- LOGOTYPE SMALL -->
+      <div class="small-logo"><img src="img/logotype-pure-white.png"></div>
       <div class="content">
 
         <div class="post">
@@ -159,8 +159,8 @@
     </div>
 
     <div id="newsletter-div">
-		<!- LOGOTYPE SMALL ->
-      <div class="small-logo"><img src="img/logotype.png"></div>
+		<!-- LOGOTYPE SMALL -->
+      <div class="small-logo"><img src="img/logotype-pure-white.png"></div>
 
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
@@ -193,11 +193,22 @@
       <div class="close" onclick="hideNewsletter()">close</div>
     </div>
 
-    <div id="save-div">
-		<!- LOGOTYPE SMALL ->
-      <div class="small-logo"><img src="img/logotype.png"></div>
+    <div id="save-div-2">
+		  <!-- LOGOTYPE SMALL -->
+      <!--
+      <div class="small-logo"><img src="img/logotype-pure-white.png"></div>
       <div class="save-img"><img src="img/save.png"></div>
-      <div class="close" onclick="hideSave()">close</div>
+      <div class="close" onclick="hideSave()">close</div> -->
+      
+      <!-- LOGOTYPE SMALL -->
+      <div class="small-logo"><img src="img/logotype-pure-white.png"></div>
+
+      <div class="content-small">
+        <div class="content-header">Mastodon</div>
+        <div class="content-line"><a href="https://catcatnya.com/@terio">@terio@catcatnya.com</a></div>
+      </div>
+
+      <div class="close" onclick="hideInfoSmall()">close</div>
     </div>
 
     <div class="divider2"></div>
@@ -205,6 +216,7 @@
     <div class="links">
       <div class="links"><a href="https://terramsc.github.io/vault/u-ok.html">18.11.2021 You forgot / It's ok</a></div>
       <div class="links"><a href="https://terramsc.github.io/vault/untitled1.html">(abandoned) untitled</a></div>
+      <div class="links"><a href="https://terramsc.github.io/vault/goodbye.html">(in works) Goodbye</a></div>
     </div>
 
   </div>
@@ -240,6 +252,13 @@
     }
     function hideSave() {
       document.getElementById('save-div').style.display = "none";
+    }
+
+    function showInfoSmall() {
+      document.getElementById('save-div-2').style.display = "flex";
+    }
+    function hideInfoSmall() {
+      document.getElementById('save-div-2').style.display = "none";
     }
   </script>
 
