@@ -21,7 +21,27 @@
 
   <style>
 
+  html,
+  body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #9ab9d1;
+
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+  }
+
   #body-wrapper {
+    background-color: #9ab9d1;
+   
+   max-width: 100%;
+   width: 1400px;
 
       -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 4s; /* Firefox < 16 */
@@ -53,39 +73,9 @@
       to   { opacity: 1; }
   }
 
-
-    #body-wrapper {
-	 background-color: #9ab9d1;
-	 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	
-	width: 100%;
-	height: 100%;
-    }
-	
-	.iframe-container {
-		max-width: 1000px;
-	}
-
-
 * {
    box-sizing: border-box;
 	  }
-
-html,
-body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #9ab9d1;
-}
-
 
 .navigation-button {
   background-image: url(https://i.imgur.com/5kzRRDx.png);
@@ -112,7 +102,7 @@ body {
 
 		<div class="iframe-container">
 			<iframe src="https://www.youtube.com/embed/WN-pgr8P_pY?modestbranding=1&rel=0&iv_load_policy=3&color=white" width="100%" height="100%" title="(abandoned) untitled" frameborder="0" allowfullscreen></iframe>
-	    </div>
+	  </div>
 
 	</div>
 
