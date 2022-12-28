@@ -92,17 +92,7 @@
     <script src="js/disable-scroll.js"></script>
 
   <script>
-  $(document).ready(function() {
-          $(".button-back").click(function() {
-            $link = $(this).data("link");
-            $("body").fadeOut(500);
-            setTimeout(function() {
-                console.log($link);
-              window.location = $link;
-            }, 500);
-            return false;
-          });
-   });
+    $('img').on('dragstart', function(event) { event.preventDefault(); });
   </script>
 
 </body>
