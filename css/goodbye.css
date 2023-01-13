@@ -31,6 +31,9 @@ body {
 
     padding-top: 40px;
     width: 100vw;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cat {
@@ -72,6 +75,18 @@ body {
 
 #cat img {
     margin-bottom: -4px;
+}
+
+#disclaimer { 
+    width: 900px;
+    padding: 40px;
+    background-color: #01200F;
+    color: #a2b483;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    color: #a2b483;
 }
 
 @media only screen and (max-width: 600px) {
