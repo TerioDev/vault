@@ -102,20 +102,26 @@ body {
     color: #fff;
     font-size: 32px;
     margin-top: 20px;
+    padding: 0 20px;
 }
 
 .content-header:first-child { 
     margin-top: 0px;
+    padding: 0 20px;
 }
 
 .content-small {
     width: 1000px;
     height: 600px;
-    padding: 40px;
     overflow-y: scroll;
     max-height: 100%;
     max-width: 100%;
     border: 1px solid #ffffff;
+    padding: 20px;
+}
+
+.content-line {
+    padding-left: 20px;
 }
 
 .post {
