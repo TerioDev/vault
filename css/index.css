@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
 }
 
 #demo-wrapper {
@@ -124,8 +125,13 @@ body {
     padding-left: 20px;
 }
 
+.date {
+    padding: 20px 20px 10px 20px;
+    font-size: 10px;
+}
+
 .post {
-    padding: 20px;
+    padding: 0 20px 40px 20px;
 }
 
 .close {
@@ -244,7 +250,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 a {
