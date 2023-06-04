@@ -123,6 +123,18 @@ body {
 
 .content-line {
     padding-left: 20px;
+    padding-bottom:20px;
+    color: #fff;
+}
+
+.pfp {
+    width: 400px;
+    max-width: calc(100% - 40px);
+    padding: 20px 20px 0 20px;
+}
+
+.pfp img {
+    max-width: 100%;
 }
 
 .date {
