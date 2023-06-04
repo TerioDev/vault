@@ -46,16 +46,29 @@ body {
 .divider {
     height: 2px;
     width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .divider2 {
+    border-top: 1px solid #fff;
     width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
     height: 25px;
 }
 
 .menu {
+    max-width: 848px;
+    width: 100%;
+
     position: sticky;
     top: 0;
+
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     flex-direction: row;
@@ -64,6 +77,9 @@ body {
     align-items: center;
     align-content: center;
     gap: 40px;
+
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .info {
@@ -92,7 +108,7 @@ body {
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 848px;
     overflow-y: scroll;
     height: 100%;
     width: 100%;
@@ -112,11 +128,12 @@ body {
 }
 
 .content-small {
-    width: 1000px;
+    width: 100%;
+    max-width: 848px;
     height: 600px;
     overflow-y: scroll;
+    height: 100%;
     max-height: 100%;
-    max-width: 100%;
     border: 1px solid #ffffff;
     padding: 20px;
 }
@@ -138,17 +155,17 @@ body {
 }
 
 .date {
-    padding: 20px 20px 10px 20px;
+    padding: 40px 40px 10px 40px;
     font-size: 10px;
 }
 
 .post {
-    padding: 0 20px 40px 20px;
+    padding: 0 40px 40px 40px;
 }
 
 .close {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     line-height: 75px;
 }
 
@@ -159,7 +176,7 @@ body {
 
 .small-logo {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     height: 75px;
     pointer-events: none;
 }
@@ -283,4 +300,11 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .menu {
+        border-left: 0px;
+        border-right: 0px;
+    }
 }

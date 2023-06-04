@@ -11,7 +11,7 @@ body, .menu, #info-div, #newsletter-div, #save-div { background-color: #000000; 
 
 /* borders */
 .divider { background-color: #fff; height: 1px; }
-.menu { border-bottom: 1px solid #fff; background-color: #000; color: #fff;}
+.menu { border-bottom: 0px solid #fff; background-color: #000; color: #fff;}
 .content { border: 2px solid #fff; }
 
 /* text main */
