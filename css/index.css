@@ -119,7 +119,7 @@ body {
     color: #fff;
     font-size: 32px;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .content-header:first-child { 
@@ -135,19 +135,18 @@ body {
     height: 100%;
     max-height: 100%;
     border: 1px solid #ffffff;
-    padding: 20px;
 }
 
 .content-line {
-    padding-left: 20px;
-    padding-bottom:20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
     color: #fff;
 }
 
 .pfp {
     width: 400px;
     max-width: calc(100% - 40px);
-    padding: 20px 20px 0 20px;
+    padding: 40px 40px 0 40px;
 }
 
 .pfp img {
@@ -258,10 +257,6 @@ body {
     width: 100%;
     max-width: 400px;
     pointer-events: none;
-}
-
-#save-div-2 > .close {
-    line-height: 20px;
 }
 
 .clear foot {
