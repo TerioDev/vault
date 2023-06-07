@@ -299,8 +299,18 @@ a:active {
 }
 
 @media (max-width: 850px) {
+
     .menu {
         border-left: 0px;
         border-right: 0px;
     }
+
+    .small-logo {
+        padding: 20px;
+    }
+
+    .close {
+        line-height: 35px;
+    }
+
 }
