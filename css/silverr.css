@@ -61,7 +61,9 @@ html, body {
 }
 
 .spotify-wrap {
+    box-sizing: border-box;
     background-color: #3f3f3f;
+    max-height: 500px;
 }
 
 .spotify {
