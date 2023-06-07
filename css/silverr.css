@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+}
+
+#body-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-content: center;
+
+    margin: 25px;
+    gap: 25px;
+}
+
+.text-line, .text-header, .text-line-merge {
+    text-align: center; 
+}
+
+/* .text-header {
+    font-size: 60px;
+    color: rgb(177, 177, 177);
+    font-weight: 600;
+    margin-bottom: -40px;
+} */
+
+.text-header {
+    font-size: 70px;
+    color: rgb(224, 224, 224);
+    font-weight: 600;
+    margin-bottom: -40px;
+}
+
+.text-line-merge {
+    margin-top: -25px;
+}
+
+.iframe-wrap {
+    width: 100%;
+    max-width: 600px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.spotify-wrap {
+    background-color: #3f3f3f;
+}
+
+.spotify {
+    max-width: 600px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #000;
+}
