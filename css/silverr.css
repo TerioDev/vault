@@ -44,10 +44,10 @@ html, body {
 } */
 
 .text-header {
-    font-size: 70px;
+    font-size: 100px;
     color: rgb(224, 224, 224);
     font-weight: 600;
-    margin-bottom: -40px;
+    margin-bottom: -50px;
 }
 
 .text-line-merge {
@@ -104,4 +104,31 @@ a, a:visited, a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
     margin-top: -13px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .text-header {
+        font-size: 90px;
+        margin-bottom: -48px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .text-header {
+        font-size: 80px;
+        margin-bottom: -46px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .text-header {
+        font-size: 70px;
+        margin-bottom: -44px;
+    }
+
 }
