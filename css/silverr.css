@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     font-family: 'Noto Sans Mono', monospace;
     font-size: 14px;
+    color: #333333;
 }
 
 #body-wrapper {
@@ -21,6 +22,18 @@ html, body {
 
 .text-line, .text-header, .text-line-merge {
     text-align: center; 
+}
+
+.text-line-lyrics-1, .text-line-merge-lyrics-1 {
+    text-align: left;
+}
+
+.text-line-lyrics-2, .text-line-merge-lyrics-2 {
+    text-align: right;
+}
+
+.text-line-merge-lyrics-1, .text-line-merge-lyrics-2 {
+    margin-top: -25px;
 }
 
 /* .text-header {
