@@ -45,7 +45,7 @@ html, body {
 
 .text-header {
     font-size: 100px;
-    color: rgb(224, 224, 224);
+    color: #e0e0e0;
     font-weight: 600;
     margin-bottom: -50px;
 }
@@ -104,6 +104,11 @@ a, a:visited, a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
     margin-top: -13px;
+}
+
+.small-img img {
+    max-width: 600px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 550px) {
