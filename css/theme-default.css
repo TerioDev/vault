@@ -1,18 +1,31 @@
 /* THEME */
 
 /* background main */
-body, .menu, #info-div, #newsletter-div, #save-div { background-color: #1a1a1a; }
+body, .menu, #info-div, #newsletter-div, #save-div { background-color: #000000; }
 
 /* selection */
-::-moz-selection, ::selection  { background: rgb(244, 244, 244, 0.2); }
+::-moz-selection, ::selection  { background: #fff; color:  #000}
 
 /* email selection */
 #mce-EMAIL::selection, #mce-EMAIL::-moz-selection { background: rgb(26, 26, 26, 0.2); }
 
 /* borders */
-.divider { background-color: #272727; }
-.menu { border-bottom: 2px solid #272727; }
-.content { border: 2px solid #272727; }
+.divider { background-color: #fff; height: 1px; }
+.divider2 { border-top: 1px solid #fff; }
+.menu { 
+    border-bottom: 0px solid #fff; 
+    background-color: #000; 
+    color: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.content { border: 2px solid #fff; border: 1px solid #ffffff !important;}
+.content-small { border: 1px solid #ffffff; }
 
 /* text main */
-.menu, .content, .close, .links, a, a:link, a:visited, a:hover, a:active { color: #f4f4f4; }
+.content, .close, .links, a, a:link, a:visited, a:hover, a:active { color: #fff; }
+.content-line { color: #fff; }
+.content-header { color: #fff; }
+
+/* divs */
+#save-div-2 { background-color: #000000; }
