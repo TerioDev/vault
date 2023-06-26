@@ -149,11 +149,11 @@ body {
 
 .date {
     padding: 40px 40px 10px 40px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .post {
-    padding: 0 40px 40px 40px;
+    padding: 0 40px 0 40px;
 }
 
 .close {
@@ -297,8 +297,8 @@ a:active {
 @media (max-width: 850px) {
 
     .menu {
-        border-left: 0px;
-        border-right: 0px;
+        border-left: 0px !important;
+        border-right: 0px !important;
     }
 
     .small-logo {
