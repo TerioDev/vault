@@ -1,0 +1,47 @@
+/* changlog template */
+
+/* 
+<details class="changelog">
+<summary class="changelog-summary">Changelog</summary>
+<p class="changelog-line">19.06.2023 - uploaded</p>
+</details>
+*/
+
+/* this code remove the arrow displayed by default on the html <details> element */
+
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+details > summary {
+    list-style: none;
+  }
+  
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+}
+
+/* default changelog styling */
+
+.changelog {
+    cursor: initial;
+}
+
+.changelog-summary {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    background-color: transparent;
+    color: initial;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.changelog-line {
+    font-size: 12px;
+    background-color: transparent;
+    color: initial;
+    padding: 10px 5px;
+    margin: 0;
+}
