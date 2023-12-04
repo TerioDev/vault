@@ -2,117 +2,31 @@
 
 <html>
 
-  <head>
-    <meta charset="utf-8">
-
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-startup-image" href="https://i.imgur.com/RQFEbFz.png">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-
+<head>
+    <!-- Meta -->
     <title>U ok?</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://i.imgur.com/tgsKcru.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="res/favicon.ico">
+    <meta name="author" content="Terio" />
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:title" property="og:title" content="U ok?" />
+    <meta name="og:site_name" property="og:site_name" content="Terra Music" />
+    <meta name="og:description" property="og:description" content="u forgot - it's ok" />
+    <!-- TODO: Change image -->
+    <meta name="og:image" property="og:image" content="https://terra.gayest.cloud/img/index_thumbnail.png" />
+    <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" href="css/iframe.css">
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/u-ok.css">
 </head>
-
-  <style>
-    /* HTML & BODY */
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: 'Inter', sans-serif;
-    }
-
-    html {
-      background-color: #fff;
-    }
-
-    body {
-      background-color: #fff;
-    }
-
-    #body-wrapper {
-      width: 100%;
-	  max-width: 800px;
-      height: 100%;
-      background-color: #fff;
-	  margin-left: auto;
-	  margin-right: auto;
-	  padding-top: 40px;
-    }
-
-    .button-back {
-      margin-top: 20px;
-      height: 60px;
-      width: 60px;
-	  margin-left:auto;
-	  margin-right:auto;
-      background-color: #fff;
-      border: 2px solid #fff;
-      font-size: 48px;
-      background-image: url("https://i.imgur.com/Va5F3e1.png");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 100%;
-      z-index: 99;
-    }
-
-    .button-back:hover {
-      cursor: pointer;
-    }
-
-    .credits {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      color: black;
-      text-align: center;
-	  padding-top: 20px;
-    }
-
-    /* MOBILE */
-
-    @media only screen and (max-width: 1000px) {
-
-      input[type=button] {
-        height: 60px;
-        width: 60px;
-        cursor: pointer;
-      }
-
-    }
-	
-  </style>
-
-  <body>
-
-    <div id="body-wrapper">
-
-		<div class="iframe-container">
-			<iframe src="https://www.youtube.com/embed/YsfUvlTyFBA?modestbranding=1&rel=0&fs=0&color=white" width="100%" height="100%" title="u forgot / it’s ok" frameborder="0"></iframe>
-	  </div>
-		
-		<div class="credits">u forgot - it's ok - by Terra</div>
-		
-		<!-- <div class="button-back" data-link="https://terramsc.github.io/vault/"></div> -->
-	
-	</div>
-
-  </body>
+<body>
+    <main>
+        <iframe src="https://www.youtube.com/embed/YsfUvlTyFBA?modestbranding=1&rel=0&fs=0&color=white" width="100%" height="100%" title="u forgot / it’s ok" frameborder="0"></iframe>
+        <img src="res/u-ok/sub.jpg" class="credits"></span>
+    </main>
+</body>
 
 </html>
