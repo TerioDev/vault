@@ -1,0 +1,28 @@
+:root {
+    font-size: 40px;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    text-align: center;
+
+    padding: calc(100vw / 10);
+}
+
+h1 {
+    background-color: white;
+    color: black;
+}
+
+h1::selection {
+    background-color: black;
+    color: white;
+}

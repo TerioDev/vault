@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    background-color: #cfccc3;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 40px;
+}
+
+::-moz-selection, ::selection  { 
+    background: black; 
+    color: #cfccc3;
+}
+
+#icon img {
+    width: 200px;
+}

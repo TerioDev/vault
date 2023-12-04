@@ -1,5 +1,12 @@
-gsap.registerPlugin(TextPlugin);
+function popup(name, state) {
+    let el = document.getElementById(name);
+    if (el === undefined)
+        return;
 
-var countdown = gsap.timeline({});
+    let body = document.getElementsByTagName('body')[0];
+    if (body) {
+        body.classList.toggle('popup_active', state);
+    }
     
-countdown.fromTo("#demo", {opacity: 0}, {opacity: 1, duration: 6}, 1)
+    el.classList.toggle('active', state);
+}

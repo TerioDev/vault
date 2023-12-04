@@ -1,139 +1,64 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+
+::-moz-selection, ::selection  { 
+    background: #E5E4F6; 
+    color: white;
+}
+
+body {
+    height: auto;
     font-family: 'Noto Sans Mono', monospace;
     font-size: 14px;
-    color: #333333;
+    background-color: white;
+    color: #3F4679;
+    text-align: center;
+    padding: 25px;
+    
+    margin: auto;
+    max-width: 650px;
 }
 
-#body-wrapper {
+a {
+    color: inherit !important;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
-    align-content: center;
-
-    margin: 25px;
     gap: 25px;
+
 }
 
-.text-line, .text-header, .text-line-merge {
-    text-align: center; 
+h1 {
+    --fs: clamp(50px, 20vw, 100px);
+    font-size: var(--fs);
+    /* 100px; */
+    color: #E5E4F6;
+    font-weight: 700;
+    margin: 0;
+    line-height: 0.87;
+    margin-bottom: -25px;
+    margin-top: 25px
 }
 
-.text-line-lyrics-1, .text-line-merge-lyrics-1 {
+img {
+    width: 100%;
+
+}
+
+.left {
     text-align: left;
 }
 
-.text-line-lyrics-2, .text-line-merge-lyrics-2 {
+.right {
     text-align: right;
 }
 
-.text-line-merge-lyrics-1, .text-line-merge-lyrics-2 {
-    margin-top: -25px;
-}
-
-/* .text-header {
-    font-size: 60px;
-    color: rgb(177, 177, 177);
-    font-weight: 600;
-    margin-bottom: -40px;
-} */
-
-.text-header {
-    font-size: 100px;
-    color: #e0e0e0;
-    font-weight: 600;
-    margin-bottom: -50px;
-}
-
-.text-line-merge {
-    margin-top: -25px;
-}
-
-.iframe-wrap {
-    width: 100%;
-    max-width: 600px;
-}
-
-.iframe-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.spotify-wrap {
-    box-sizing: border-box;
-    background-color: #7f7f7f;
-    max-height: 500px;
-    position: relative;
-}
-
-.spotify-overlay {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    pointer-events: none;
-}
-
 .spotify {
-    max-width: 600px;
-}
-
-a, a:visited, a:hover, a:active {
-    color: #000;
-}
-
-.mini-logo, .mini-logo img {
-    width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -13px;
-}
-
-.small-img img {
-    max-width: 600px;
-    width: 100%;
-}
-
-@media only screen and (max-width: 550px) {
-
-    .text-header {
-        font-size: 90px;
-        margin-bottom: -48px;
-    }
-
-}
-
-@media only screen and (max-width: 500px) {
-
-    .text-header {
-        font-size: 80px;
-        margin-bottom: -46px;
-    }
-
-}
-
-@media only screen and (max-width: 450px) {
-
-    .text-header {
-        font-size: 70px;
-        margin-bottom: -44px;
-    }
-
+    aspect-ratio: unset;
+    height: revert-layer;
+    background-color: #535353;
 }

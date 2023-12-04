@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#text {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: max-content;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+#text-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: calc(100% + 10px);
+    margin-top: -10px;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    opacity: 1;
+
+    mix-blend-mode: difference;
+}
+
+#image-wrap {
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+img {
+    width: 680px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 40px;
+}
